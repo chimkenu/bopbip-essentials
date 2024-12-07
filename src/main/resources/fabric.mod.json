@@ -4,7 +4,7 @@
   "version": "${version}",
   "name": "bopbip-essentials",
   "description": "bopbip smp p2p essentials",
-  "authors": [],
+  "authors": [ "Chimkenu" ],
   "contact": {},
   "license": "All-Rights-Reserved",
   "icon": "assets/bopbip-essentials/icon.png",
