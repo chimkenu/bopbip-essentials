@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "bopbip-essentials",
+  "version": "${version}",
+  "name": "bopbip-essentials",
+  "description": "bopbip smp p2p essentials",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/bopbip-essentials/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.chimkenu.bopbipEssentials.client.BopbipEssentialsClient"
+    ],
+    "main": [
+      "me.chimkenu.bopbipEssentials.BopbipEssentials"
+    ]
+  },
+  "mixins": [
+    "bopbip-essentials.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
