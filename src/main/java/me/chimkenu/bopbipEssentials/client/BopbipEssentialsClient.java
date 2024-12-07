@@ -102,11 +102,11 @@ public class BopbipEssentialsClient implements ClientModInitializer {
                     .call();
             git.remoteAdd()
                     .setName("origin")
-                    .setUri(new URIish(CONFIG.github_link()))
+                    .setUri(new URIish(CONFIG.githubLink()))
                     .call();
             git.push()
                     .setRemote("origin")
-                    .setCredentialsProvider(new UsernamePasswordCredentialsProvider(CONFIG.github_key(), ""))
+                    .setCredentialsProvider(new UsernamePasswordCredentialsProvider(CONFIG.githubKey(), ""))
                     .add("main")
                     .call();
             git.close();
@@ -177,7 +177,7 @@ public class BopbipEssentialsClient implements ClientModInitializer {
     public static boolean cloneGithubRepo(File dir) {
         try {
             Git.cloneRepository()
-                    .setURI(CONFIG.github_link())
+                    .setURI(CONFIG.githubLink())
                     .setDirectory(dir)
                     .call().close();
         } catch (Exception e) {
